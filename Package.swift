@@ -7,6 +7,10 @@ let package = Package(
     products: [
         .library(name: "Euclid", targets: ["Euclid"]),
     ],
+    platforms: [
+        .macOS(.v15) // Specify macOS 15 as the minimum required version
+        // Add other platforms like .iOS(.vXX) if Euclid uses APIs specific to them too
+    ],
     targets: [
         .target(
             name: "Euclid",
